@@ -20,7 +20,7 @@ open class DGRunkeeperSwitchRoundedLayer: CALayer {
 
 // MARK: - DGRunkeeperSwitchSelectedRoundedLayer
 
-open class DGRunkeeperSwitchRoundedLayer: CALayer {
+open class DGRunkeeperSwitchSelectedRoundedLayer: CALayer {
     
     override open var bounds: CGRect {
         didSet { cornerRadius = 6 }
