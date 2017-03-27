@@ -13,7 +13,17 @@ import UIKit
 open class DGRunkeeperSwitchRoundedLayer: CALayer {
 
     override open var bounds: CGRect {
-        didSet { cornerRadius = bounds.height / 2.0 }
+        didSet { cornerRadius = 7 }
+    }
+    
+}
+
+// MARK: - DGRunkeeperSwitchSelectedRoundedLayer
+
+open class DGRunkeeperSwitchRoundedLayer: CALayer {
+    
+    override open var bounds: CGRect {
+        didSet { cornerRadius = 6 }
     }
     
 }
@@ -133,7 +143,7 @@ open class DGRunkeeperSwitch: UIControl {
         // Setup views
         addSubview(titleLabelsContentView)
         
-        object_setClass(selectedBackgroundView.layer, DGRunkeeperSwitchRoundedLayer.self)
+        object_setClass(selectedBackgroundView.layer, DGRunkeeperSwitchSelectedRoundedLayer.self)
         addSubview(selectedBackgroundView)
         
         addSubview(selectedTitleLabelsContentView)
